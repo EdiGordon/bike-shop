@@ -1,0 +1,12 @@
+.ReactModal__Overlay {
+  transform: translateY(-100px) scaleX(0.8) rotate(90deg);
+  transition: all 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  transform: translateY(0px) scaleX(1) rotate(0deg);
+}
+
+.ReactModal__Overlay--before-close {
+  transform: translateY(1000px) scaleX(1) rotate(0deg);
+}/*# sourceMappingURL=AddCard.css.map */
