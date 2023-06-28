@@ -20,7 +20,7 @@ export const LoginPage: React.FC = () => {
         }
         else {
             // הערה
-            console.log('heara');
+            // alert('Wellcom');
         }
     }, [])
 
@@ -32,7 +32,7 @@ export const LoginPage: React.FC = () => {
         }
         else {
             // הערה
-            console.log('heara');
+            //   alert('Typing error, please try again');
         }
     }, [update])
 
@@ -57,7 +57,7 @@ export const LoginPage: React.FC = () => {
                 </p>
                 <p>
                     <label>Password</label>
-                    {/* <Link to="/forget-password"><label className="right-label">Forget password?</label></Link> */}
+                    <Link to="/forget-password"><label className="right-label">Forget password?</label></Link>
                     <br />
                     <input onChange={(e) => setPassword(e.target.value)} type="password" name="password" required />
                 </p>

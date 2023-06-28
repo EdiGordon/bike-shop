@@ -2,7 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import '../App.css'
-// import BackgroundImage from '../assets/bg.png'
+import BackgroundImage from '../assets/full-suspension-bikes.jpg'
+
+
 
 export const LandingPage: React.FC = () => {
     return (
@@ -24,7 +26,7 @@ export const LandingPage: React.FC = () => {
 const HeaderStyle = {
     width: "100%",
     height: "100vh",
-    background: `url(../assets/bg.png)`,
+    background: `url(${BackgroundImage})`,
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover"
