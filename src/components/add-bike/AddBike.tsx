@@ -30,7 +30,7 @@ const AddCardComponent = (): JSX.Element => {
       name: product.name,
       type: product.type,
       price: product.price,
-    
+
     };
     authService.addNew(bikeDto, file);
   }
@@ -53,15 +53,12 @@ const AddCardComponent = (): JSX.Element => {
     <>
       <div className="d-flex">
         <button onClick={openModal} className="btn primary-button" >
-          Add Card
+          Add Bike
         </button>
       </div>
       <Modal onRequestClose={closeModal} isOpen={isOpen} closeTimeoutMS={500}>
         <div className="d-flex card m-5">
           <h2 className="p-3">Add A Bike:</h2>
-          <button className="btn primary-button" onClick={closeModal}>
-            Close Modal
-          </button>
         </div>
         <hr />
         Name:
@@ -82,10 +79,11 @@ const AddCardComponent = (): JSX.Element => {
           onChange={(e) => setPrice(+e.currentTarget.value)}
         />
         <br />
-        <input type="file" onChange={(e) => setFileChange(e.target.files ? e.target.files[0] : null)} />
-
-
-
+        <p>
+          Image:
+          <input type="file" onChange={(e) => setFileChange(e.target.files ? e.target.files[0] : null)} />
+        </p>
+        <br />
         <button className="primary-button"
           onClick={() => {
             const product: ProductPorps = {
@@ -99,7 +97,10 @@ const AddCardComponent = (): JSX.Element => {
             Swal.fire("success", "", "success").then((e) => closeModal());
           }}
         >
-          Add Card:
+          Add Bike
+        </button>
+        <button className="btn primary-button" onClick={closeModal}>
+          Close Modal
         </button>
       </Modal>
     </>
