@@ -261,7 +261,7 @@ const HomeBody = (): JSX.Element => {
           fontWeight="500"
           color="#A6A6A6"
         >
-          we’ve got everything you need to start biker
+          we have got everything you need to start biker
         </Text>
       </Flex>
 

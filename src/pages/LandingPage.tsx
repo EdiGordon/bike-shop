@@ -9,8 +9,8 @@ import BackgroundImage from '../assets/full-suspension-bikes.jpg'
 export const LandingPage: React.FC = () => {
     return (
         <header style={HeaderStyle}>
-            <h1 className="main-title text-center">login / register page</h1>
-            <p className="main-para text-center">join us now and don't waste time</p>
+            <h1 className="main-title text-center">Is Riding A Way Of Life?</h1>
+            <p className="main-para text-center ">join us now don't waste time</p>
             <div className="buttons text-center">
                 <Link to="/login">
                     <button className="primary-button">log in</button>

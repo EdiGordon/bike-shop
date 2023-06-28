@@ -181,7 +181,7 @@ const FooterComp = (): JSX.Element => {
               <Link
                 _focus={{}}
                 isExternal
-                href="https://www.linkedin.com/in/ali-turkaman-%F0%9F%94%A5-55704a21b/"
+                href="https://www.linkedin.com/in/edi-gordon-aa591296/"
               >
                 <Image
                   cursor="pointer"
@@ -190,7 +190,7 @@ const FooterComp = (): JSX.Element => {
                   src={linkedin}
                 />
               </Link>
-              <Link _focus={{}} isExternal href="https://twitter.com/ATurkaman">
+              <Link _focus={{}} isExternal href="https://twitter.com">
                 <Image
                   cursor="pointer"
                   _selection={{ bg: "transparent" }}
@@ -201,7 +201,7 @@ const FooterComp = (): JSX.Element => {
               <Link
                 _focus={{}}
                 isExternal
-                href="https://www.instagram.com/ali_turkaman_n/"
+                href="https://www.instagram.com"
               >
                 <Image
                   cursor="pointer"
@@ -213,7 +213,7 @@ const FooterComp = (): JSX.Element => {
               <Link
                 _focus={{}}
                 isExternal
-                href="https://github.com/aliturkamanjs"
+                href="https://github.com/EdiGordon"
               >
                 <Image
                   cursor="pointer"
@@ -230,10 +230,10 @@ const FooterComp = (): JSX.Element => {
               </Text>
               <Link
                 color="#7E7E7E"
-                href="https://github.com/aliturkamanjs"
+                href="https://github.com/EdiGordon"
                 isExternal
               >
-                E
+                Edi Gordon
               </Link>
             </Flex>
           </Flex>
