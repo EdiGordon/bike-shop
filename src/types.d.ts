@@ -7,7 +7,7 @@ type ProductPorps = {
 }
 
 type CartProps = {
-    cart?: Array;
+    cart?: Array<any>;
     total: number;
 }
 
@@ -22,3 +22,4 @@ type actionProps = {
     payload: object;
     type: string;
 }
+
