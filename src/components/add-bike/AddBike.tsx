@@ -1,8 +1,9 @@
-import "./AddCard.scss";
+import "./AddBike.scss";
 import { useState } from "react";
 import Modal from "react-modal";
 import Swal from "sweetalert2";
 import { BikeDto, authService } from "../../services/auth.service";
+import React from "react";
 // import { v4 } from "uuid";
 // import { useAppDispatch } from "../../app/hooks";
 // import { Card, Category, addCard } from "../../features/cards/cardsSlice";
@@ -21,7 +22,7 @@ import { BikeDto, authService } from "../../services/auth.service";
 const AddCardComponent = (): JSX.Element => {
   const [name, setName] = useState("");
   const [type, setType] = useState("");
-  const [price, setPrice] = useState(0);
+  const [price, setPrice] = useState();
   const [file, setFileChange] = useState<File | any>();
 
   const addProduct = (product: ProductPorps) => {
@@ -51,28 +52,28 @@ const AddCardComponent = (): JSX.Element => {
   return (
     <>
       <div className="d-flex">
-        <button onClick={openModal} className="btn btn-primary mx-auto">
+        <button onClick={openModal} className="btn primary-button" >
           Add Card
         </button>
       </div>
       <Modal onRequestClose={closeModal} isOpen={isOpen} closeTimeoutMS={500}>
-        <div className="d-flex card">
-          <h2 className="p-3">Add A Card:</h2>
-          <button className="btn btn-danger text-light" onClick={closeModal}>
-            Close modal
+        <div className="d-flex card m-5">
+          <h2 className="p-3">Add A Bike:</h2>
+          <button className="btn primary-button" onClick={closeModal}>
+            Close Modal
           </button>
         </div>
         <hr />
-        name:
+        Name:
         <input value={name} onChange={(e) => setName(e.currentTarget.value)} />
         <br />
-        type:
+        Type:
         <input
           value={type}
           onChange={(e) => setType(e.currentTarget.value)}
         />
         <br />
-        price:
+        Price:
         <input
           min="0"
           max="500"
@@ -85,7 +86,7 @@ const AddCardComponent = (): JSX.Element => {
 
 
 
-        <button
+        <button className="primary-button"
           onClick={() => {
             const product: ProductPorps = {
               // id: v4(),

@@ -1,6 +1,6 @@
 import BikeDetail from "../pages/bikeDetail";
 import CartPage from "../pages/cartPage";
-import AddCardPage from "../pages/addCard"
+import AddCardPage from "../pages/addBike"
 import HomePage from "../pages/home";
 import ShopPage from "../pages/shop";
 import { LandingPage } from "../pages/LandingPage";
