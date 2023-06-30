@@ -139,7 +139,7 @@ const HomeBody = (): JSX.Element => {
         ]}
         flexWrap="wrap"
       >
-        {products.slice(products.length - 2).map((product) => {
+        {products.slice(products.length - 6).map((product) => {
           return (
             <Card
               mt="8"
@@ -193,9 +193,9 @@ const HomeBody = (): JSX.Element => {
                   h="30px"
                   w="94%"
                   variant="outline"
-                // onClick={() => addToCart(product)}
+                onClick={() => addToCart(product)}
                 >
-                  {/* {CheckInCart(cart, product) ? "In Cart" : "Buy Now"} */}
+                  {CheckInCart(cart, product) ? "In Cart" : "Buy Now"}
                 </Button>
               </Center>
             </Card>
