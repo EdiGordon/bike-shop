@@ -77,7 +77,7 @@ const HomeBody = (): JSX.Element => {
 
     {
       title: "bike rider",
-      desc: "From its medieval origins to the digital era, learn everything there is to know about the  lorem ipsum passage.",
+      desc: "From its medieval origins to the digital era, learn everything there is to know about bike rider.",
       icon: bikerIcon,
       id: 3,
     },

@@ -96,7 +96,7 @@ const ShopPage = (): JSX.Element => {
               color="#7E7E7E"
               style={{ fontFamily: "ralewayMedium" }}
             >
-              The purpose of lorem ipsum is to create a natural looking
+              Choose your way with the appropriate bike.
             </Text>
           </Flex>
           {/* <Select
